@@ -1,0 +1,12 @@
+const GAME={title:"🧠 Sun'iy intellekt",file:"ai.txt",lang:"bin",badge:"AI",questions:[
+ {q:"Sun'iy intellekt (AI) nima?",o:["Kompyuterning o'rganish, tahlil qilish va qaror qabul qilish qobiliyati","Faqat robot qurilmasi","Internet tezligi texnologiyasi","Bitta dasturlash tili"],e:"AI mashinalarga odamga xos fikrlash vazifalarini bajarishni o'rgatadi."},
+ {q:"Mashinaviy o'rganish (Machine Learning) nima?",o:["Dastur ma'lumotlardan o'rganib, natijani o'zi topishi","Kompyuterni qo'lda sozlash","Ekran yorqinligini boshqarish","Faylni siqish usuli"],e:"Dasturchi har bir qoidani yozmaydi, model misollardan qonuniyatni o'zi topadi."},
+ {q:"Sun'iy neyron tarmoq qaysi narsadan ilhomlangan?",o:["Inson miyasi","Quyosh tizimi","Elektr tarmog'i","Internet kabellari"],e:"Neyron tarmoqlar miyadagi neyronlarning bog'lanishiga o'xshatib yaratilgan."},
+ {q:"Matn yozadigan zamonaviy chatbotlar asosan qaysi modelga tayanadi?",o:["Katta til modeli (LLM)","Matn muharriri","Ma'lumotlar bazasi","Antivirus"],e:"LLM juda katta matnlarda o'qitilgan til modelidir."},
+ {q:"Quyidagilardan qaysi biri sun'iy intellektdan foydalanishga misol?",o:["Telefondagi ovozli yordamchi","Oddiy kalkulyator","Qog'oz kitob","Elektr rozetkasi"],e:"Ovozni tanish va savolga javob berish sun'iy intellektga asoslanadi."},
+ {q:"Overfitting (haddan tashqari moslashish) nima?",o:["Model o'quv ma'lumotini yodlab, yangi ma'lumotda xato qiladi","Model juda tez ishlaydi","Model hajmi juda kichik","Ma'lumotlar yo'qolib qoladi"],e:"Model qonuniyatni emas, aynan o'quv misollarini yodlab olgan bo'ladi."},
+ {q:"Prompt nima?",o:["AI ga beriladigan topshiriq yoki savol","AI dasturining nomi","Xato xabari","Parol turi"],e:"Prompt qanchalik aniq bo'lsa, javob shunchalik yaxshi chiqadi."},
+ {q:"Rasmdagi hayvonni mushuk yoki it deb ajratish qaysi vazifa?",o:["Tasniflash (classification)","Tarjima","Ovoz sintezi","Shifrlash"],e:"Tasniflash — obyektni oldindan berilgan sinflardan biriga kiritish."},
+ {q:"O'quv ma'lumotlari sifatsiz bo'lsa nima bo'ladi?",o:["Model noto'g'ri yoki xolis bo'lmagan natija beradi","Model tezlashadi","Hech narsa o'zgarmaydi","Model xatoni o'zi tuzatadi"],e:"Chiqindi kirsa, chiqindi chiqadi (garbage in, garbage out)."},
+ {q:"AI 'gallyutsinatsiya' qiladi deganda nima nazarda tutiladi?",o:["Ishonchli ko'rinadigan, lekin noto'g'ri ma'lumot to'qib chiqaradi","Tush ko'radi","Rasm chizadi","Tezroq ishlaydi"],e:"Shuning uchun AI javoblarini muhim holatlarda tekshirib ko'rish kerak."}
+]};

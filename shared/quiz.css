@@ -1,0 +1,45 @@
+:root{--bg:#eef1f6;--pan:#fff;--ln:#d5dbe6;--tx:#1d2433;--mu:#6b7589;--gr:#0a9b62;--cy:#0a7ea4;--pu:#8250df;--or:#b35900;--rd:#cf222e;--glow:0 0 0 transparent;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070a10;--pan:#0f1420;--ln:#1d2535;--tx:#cdd6e6;--mu:#6c788f;--gr:#3dffa2;--cy:#4dd8ff;--pu:#c792ea;--or:#ffb86b;--rd:#ff5f6d;--glow:0 0 10px}}
+:root[data-theme="dark"]{--bg:#070a10;--pan:#0f1420;--ln:#1d2535;--tx:#cdd6e6;--mu:#6c788f;--gr:#3dffa2;--cy:#4dd8ff;--pu:#c792ea;--or:#ffb86b;--rd:#ff5f6d;--glow:0 0 10px}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;display:flex;justify-content:center}
+#mx{position:fixed;inset:0;width:100%;height:100%;z-index:0;opacity:.6}
+#clk{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);right:10px;z-index:2;padding:6px 10px;border:1px solid var(--gr);border-radius:8px;background:var(--pan);color:var(--gr);font-size:13px;font-weight:700;text-shadow:var(--glow) var(--gr);box-shadow:var(--glow) var(--gr)}
+.win{position:relative;z-index:1;width:100%;max-width:520px;margin:54px 14px 14px;background:color-mix(in srgb,var(--pan) 90%,transparent);backdrop-filter:blur(3px);border:1px solid var(--ln);border-radius:12px;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.bar{display:flex;align-items:center;gap:6px;padding:10px 12px;border-bottom:1px solid var(--ln);font-size:12px;color:var(--mu)}
+.bar i{width:11px;height:11px;border-radius:50%;display:inline-block}
+.bar span{margin-left:8px}
+.top{display:flex;justify-content:space-between;padding:10px 14px 4px;font-size:13px;font-weight:700}
+#hp{color:var(--rd)}#sc{color:var(--or)}
+#pg{display:flex;gap:3px;padding:4px 14px 8px}
+#pg i{flex:1;height:5px;border-radius:3px;background:var(--ln)}
+#pg i.d{background:var(--gr);box-shadow:var(--glow) var(--gr)}
+#pg i.c{background:var(--cy)}
+.task{padding:8px 14px 10px;font-size:14px;line-height:1.5;border-bottom:1px solid var(--ln)}
+.task em{color:var(--gr);font-style:normal}
+.ed{margin:12px;border:1px solid var(--ln);border-radius:8px;padding:8px 0;font-size:13px;line-height:1.7;background:rgba(0,0,0,.12);overflow-x:auto}
+.ln{display:flex;white-space:pre}
+.ln b{width:30px;text-align:right;padding-right:10px;color:var(--mu);font-weight:400;flex:none}
+.kw{color:var(--pu)}.fn{color:var(--cy)}.nu{color:var(--or)}.cm{color:var(--mu)}.pp{color:var(--rd)}.st2{color:var(--or)}
+#opts{padding:0 12px;display:grid;gap:7px}
+button{font:inherit;cursor:pointer}
+.o{text-align:left;padding:11px 12px;border:1px solid var(--ln);border-radius:8px;background:transparent;color:var(--tx);font-size:13px}
+.o:hover:not(:disabled){border-color:var(--cy);color:var(--cy)}
+.o b{color:var(--pu);margin-right:8px}
+.o.ok{border-color:var(--gr);color:var(--gr);box-shadow:var(--glow) var(--gr)}
+.o.bad{border-color:var(--rd);color:var(--rd);opacity:.7}
+.o:disabled{cursor:default}
+.run{display:flex;gap:6px;padding:10px 12px 2px}
+.run button{padding:10px;border-radius:8px;font-weight:700;border:1px solid;background:transparent}
+#hint{flex:1;color:var(--or);border-color:var(--or)}
+#nx{flex:2;background:var(--gr);color:#041;border-color:var(--gr);box-shadow:var(--glow) var(--gr);display:none}
+#msg{padding:8px 14px;min-height:50px;font-size:13px;line-height:1.55}
+.ok2{color:var(--gr)}.er{color:var(--rd)}
+.st{display:flex;justify-content:space-between;padding:6px 14px;background:var(--cy);color:#041;font-size:11px;font-weight:700}
+
+#back{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);left:10px;z-index:2;padding:6px 10px;border:1px solid var(--cy);border-radius:8px;background:var(--pan);color:var(--cy);font-size:13px;font-weight:700;text-decoration:none}
+#back:hover{box-shadow:var(--glow) var(--cy)}
+.sk{margin-top:6px;background:transparent;border:1px solid var(--cy);color:var(--cy);border-radius:6px;padding:5px 10px;font:inherit;font-size:12px;cursor:pointer}
+#hp{color:var(--cy)}
+#pg i.x{background:var(--rd)}

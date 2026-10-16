@@ -1,0 +1,12 @@
+const GAME={title:"🐞 Xatoni top",file:"debug.cpp",lang:"cpp",badge:"Debug",questions:[
+ {q:"Xato qaysi qatorda?",c:`int main() {\n  int x = 5\n  cout << x;\n}`,o:["2-qator","3-qator","1-qator","4-qator"],e:"2-qatorda nuqta-vergul (;) yetishmayapti."},
+ {q:"Shart nima uchun noto'g'ri ishlaydi?",c:`int a = 10;\nif (a = 5) {\n  cout << "Besh";\n}`,o:["= o'rniga == (taqqoslash) kerak","if ichida int ishlamaydi","Nuqta-vergul kerak","cout noto'g'ri yozilgan"],e:"= qiymat beradi, == esa taqqoslaydi."},
+ {q:"Xato qaysi qatorda?",c:`int arr[5];\nfor (int i = 0; i <= 5; i++)\n  arr[i] = i;`,o:["2-qator (i <= 5)","1-qator","3-qator","Xato yo'q"],e:"arr[5] mavjud emas. Shart i < 5 bo'lishi kerak."},
+ {q:"Xato qaysi qatorda?",c:`int sum = 0;\nfor (int i = 1; i <= 3; i++) {\n  int sum += i;\n}`,o:["3-qator: sum qayta e'lon qilingan","2-qator","1-qator","4-qator"],e:"3-qatorda 'int' yozilgani sum ni qayta e'lon qiladi. To'g'risi: sum += i;"},
+ {q:"Dastur nima uchun to'xtamaydi?",lang:"js",c:`let n = 3;\nwhile (n > 0) {\n  console.log(n);\n}`,o:["n kamaytirilmayapti (n-- yo'q)","while noto'g'ri yozilgan","let ishlamaydi","console.log xato"],e:"Cheksiz tsikl: n qiymati hech qachon o'zgarmaydi."},
+ {q:"Nima chiqadi va nega?",lang:"js",c:`function add(a, b) {\n  a + b;\n}\nconsole.log(add(2, 3));`,o:["undefined: return yozilmagan","5","NaN","Xato beradi"],e:"Funksiya qiymat qaytarmaydi, shuning uchun undefined chiqadi."},
+ {q:"Bu kod nima qiladi?",c:`int* p = nullptr;\ncout << *p;`,o:["Dastur qulaydi: bo'sh ko'rsatkichga murojaat","0 chiqaradi","nullptr so'zini chiqaradi","Hech narsa qilmaydi"],e:"nullptr ko'rsatkichini * bilan ochish (dereferencing) xatodir."},
+ {q:"Xato nimada?",c:`string s = "salom";\nif (s == 'salom') cout << "ha";`,o:["Qo'sh tirnoq kerak: \"salom\"","string noto'g'ri e'lon qilingan","== bilan solishtirib bo'lmaydi","cout noto'g'ri"],e:"'salom' bitta belgi uchun. Matn uchun \"salom\" yoziladi."},
+ {q:"Rekursiyada nima yetishmayapti?",c:`int f(int n) {\n  return n * f(n - 1);\n}`,o:["To'xtash sharti (base case)","return so'zi","int turi","Ko'paytirish belgisi"],e:"Base case bo'lmasa, funksiya cheksiz chaqiriladi (stack overflow)."},
+ {q:"Dastur nima bo'ladi?",lang:"js",c:`const x = 1;\nx = 2;\nconsole.log(x);`,o:["Xato: const qiymati o'zgarmaydi","2 chiqadi","1 chiqadi","undefined chiqadi"],e:"const bilan e'lon qilingan o'zgaruvchiga qayta qiymat berib bo'lmaydi."}
+]};
